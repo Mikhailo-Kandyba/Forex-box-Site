@@ -1,2 +1,61 @@
 @import "variables";
 @import "mixin";
+
+.btn {
+  display: block;
+  font-family: $base-font-default !important;
+  font-size: $font-size-base + 2 !important;
+  line-height: $line-height-base + 2;
+  padding: 12px;
+  border-radius: 5px;
+  background: $spring-wood;
+  color: $mine-shaft;
+  cursor: pointer;
+  border: none;
+
+  @include breakpoint($desktop) {
+    padding: 13px;
+  }
+
+  &:hover {
+    background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+    color: #fff;
+    transition: all .50s;
+  }
+}
+
+.btn-xl {
+  padding: 13px 42px;
+}
+
+.btn-lg {
+  padding: 12px 35px;
+}
+
+.btn-spring-wood {
+  color: $spring-wood;
+
+  &:hover {
+    color: $mine-shaft;
+  }
+}
+
+.bg-gradient-border {
+  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.bg-gradient-border-hover {
+  &:hover {
+    background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+  }
+}
+
+.btn-background {
+  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(250,187,53,1) 0%, rgba(235,128,12,1) 100%);
+  }
+}

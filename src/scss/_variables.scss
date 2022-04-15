@@ -5,13 +5,13 @@ $black:                #000;
 $mine-shaft:           #373737;
 
 //font page
-$base-font-default:    Lato-Regular;
+$base-font-default:    Lato-Light;
+$lato-regular:         Lato-Regular;
 $lato-bold:            Lato-Bold;
-$lato-light:           Lato-Light;
 $lato-extra-bold:      Lato-ExtraBold;
 
 //Body
-$base-text-color: $mine-shaft;
+$base-text-color: $black;
 $base-background: $spring-wood;
 $base-font-family: $base-font-default;
 $font-size-base: 20px;

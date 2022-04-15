@@ -1,20 +1,38 @@
 @import "variables";
 @import "mixin";
 
+.header {
+  padding: 35px 0;
+}
+
 .logo {
   display: flex;
   align-items: flex-end;
+  margin-right: 20px;
 
   > img {
     margin-right: 7px;
   }
+
+  img {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-.menu-navigation {
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 12px;
 
   @include breakpoint($mobile) {
     display: block;
@@ -24,20 +42,11 @@
     border-radius: 5px;
   }
 
-  li {
-    @include breakpoint($mobile) {
-      font-size: $font-size-base + 3;
-      line-height: $line-height-base + 5;
-    }
-  }
-
   a {
+    display: block;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
     padding: 5px 10px;
-    color: $black;
-
-    @include breakpoint($mobile) {
-      display: block;
-    }
   }
 
   .btn-mobile {
@@ -46,10 +55,71 @@
       display: flex !important;
     }
   }
+}
 
-  .justify-content-end {
-    @include breakpoint($mobile) {
-      justify-content: flex-start !important;
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 460px;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .btn-area {
+    margin-bottom: 5px;
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .custom-select {
+    margin-bottom: 0;
+
+    .selected-item {
+      cursor: pointer;
+      padding: 10px 18px;
+      background: $white;
+      border-radius: 4px;
+
+      &:hover {
+        background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+        color: #fff;
+        transition: all .50s;
+      }
+    }
+
+    .all-items {
+      margin-top: -2px !important;
+      right: 0;
+      left: auto;
+    }
+
+    .item {
+      padding: 5px 10px;
+      text-align: center;
+    }
+  }
+
+  .selected-item {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 5;
+    background: $transparent;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .item {
+    color: #000;
+
+    @include breakpoint($desktop) {
+      padding: 5px 7px;
     }
   }
 }

@@ -1,8 +1,22 @@
 @import "mixin";
 @import "variables";
 
+.width-24 {
+  width: 24px;
+}
+
+.width-120 {
+  width: 120px;
+}
+
 .d-none-sm {
   @include breakpoint($mobile) {
     display: none;
   }
 }
+
+.position-relative {
+  position: relative;
+}
+
+
