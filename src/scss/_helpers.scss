@@ -1,0 +1,8 @@
+@import "mixin";
+@import "variables";
+
+.d-none-sm {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
