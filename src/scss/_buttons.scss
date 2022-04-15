@@ -3,8 +3,8 @@
 
 .btn {
   display: block;
-  font-family: $base-font-default !important;
-  font-size: $font-size-base + 2 !important;
+  font-family: $base-font-default;
+  font-size: $font-size-base;
   line-height: $line-height-base + 2;
   padding: 12px;
   border-radius: 5px;
@@ -24,12 +24,25 @@
   }
 }
 
+.btn-width {
+  max-width: 310px;
+  width: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 .btn-xl {
   padding: 13px 42px;
 }
 
 .btn-lg {
   padding: 12px 35px;
+}
+
+.btn-md {
+  padding: 20px 15px;
 }
 
 .btn-spring-wood {
