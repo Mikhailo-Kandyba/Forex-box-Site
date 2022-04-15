@@ -56,6 +56,10 @@
 }
 /*end styles centering*/
 
+.description-service-wrap {
+  margin-bottom: 95px;
+}
+
 .description-service {
   background: $spring-wood-two;
   box-shadow: 3px 3px 15px 1px rgba(138, 76, 6, 0.1);
@@ -215,4 +219,53 @@
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+.advantages-wrap {
+  margin-bottom: 100px;
+
+  h4 {
+    font-family: $lato-regular;
+    font-size: $font-size-base + 15;
+    line-height: $line-height-base + 18;
+    color: $mine-shaft;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+  .description-area {
+    padding: 0 5px;
+  }
+
+  .img-area {
+    max-width: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  span {
+    display: block;
+    font-family: $lato-extra-bold;
+    font-size: $font-size-base + 15;
+    line-height: $line-height-base + 18;
+    margin-bottom: 16px;
+  }
 }
