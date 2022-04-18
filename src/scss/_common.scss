@@ -291,7 +291,7 @@
 
 .ping-test-wrap {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
   h4 {
     font-family: $lato-bold;
@@ -355,5 +355,113 @@
   width: 0;
   transition: width 0.5s ease-in;
 }
+
+.faq-wrap {
+  h4 {
+    font-family: $lato-bold;
+    font-size: $font-size-base + 20;
+    line-height: $line-height-base + 24;
+    text-align: center;
+  }
+}
+
+.blog-wrap {
+  margin-bottom: 200px;
+
+  h4 {
+    font-family: $lato-bold;
+    font-size: $font-size-base + 20;
+    line-height: $line-height-base + 24;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+}
+
+.blog_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -20px;
+}
+
+.blog_item {
+  width: 33.3%;
+  padding: 0 20px;
+}
+
+.blog_section {
+  background: $spring-wood-two;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.blog_date {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.blog_day {
+  font-family: $lato-extra-bold;
+  font-size: $font-size-base + 30;
+  line-height: $line-height-base + 12;
+  margin-right: 10px;
+}
+
+.mounth {
+  font-family: $lato-regular;
+  font-size: $font-size-base - 4;
+  line-height: $line-height-base - 4;
+  color: $mine-shaft;
+}
+
+.blog_title {
+  font-family: $lato-bold;
+  font-size: $font-size-base + 3;
+  line-height: $line-height-base + 3;
+  background: -webkit-gradient(linear,left top, left bottom,from(#fff),to(#fff)) padding-box,  -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
+  background: -o-linear-gradient(#fff,#fff) padding-box,  -o-linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  background: linear-gradient(#fff,#fff) padding-box,  linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  border-bottom: 2px solid transparent;
+  border-top: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.blog_text {
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 1;
+  margin-bottom: 25px;
+}
+
+.blog_link {
+  display: inline-flex;
+  align-items: center;
+  font-family: $lato-regular;
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 4;
+  text-decoration: underline;
+
+  img {
+    width: 33px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
 
 
