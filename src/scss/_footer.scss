@@ -1,0 +1,155 @@
+@import "variables";
+@import "mixin";
+
+/* footer */
+.footer-wrapper_9689 {
+  background-color: #FEFEFD;
+  max-width: 1325px;
+  margin: 0 auto;
+}
+
+.footer_9689 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+
+  max-width: 1325px;
+  margin: 0 auto;
+}
+
+.footer_9689_link {
+  color: #FBF9F8 !important;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 15px 45px;
+}
+
+.footer_9689_box {
+  width: 258px;
+  margin-top: 40px;
+  padding: 0;
+
+}
+
+.footer_conteiner_9689 {
+  height: 270px;
+}
+
+.footer_title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 15px;
+  margin-left: 0;
+  text-align: start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.footer_title_social {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 15px;
+  margin-left: 0;
+  text-align: start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.footer_link {
+  margin: 20px;
+  margin-left: 0;
+  text-align: start;
+}
+
+.footer_link a {
+  font-weight: 300;
+  color: #373737;
+  font-size: 18px;
+}
+
+.footer_social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.copyright_9689 {
+  text-align: start;
+  margin: 50px auto 60px;
+
+  color: #373737;
+}
+/* end footer */
+
+/* footer mobile */
+.footer_9689 {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footer-wrapper_9689 {
+  margin: 0 20px;
+}
+
+.footer_9689_logo_mobile {
+  text-align: start;
+}
+
+.footer_conteiner_9689 {
+  height: unset;
+}
+
+.footer_9689_box {
+  display: none;
+}
+
+.copyright_9689 {
+  font-size: 9px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.footer_title {
+  position: relative;
+}
+
+/* footer mobile accordion */
+.footer_9689_list {
+  display: none;
+}
+
+.footer_title:before {
+  content: url("../images/arrow_footer_mobile.svg");
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transition: all 0.3s linear;
+}
+
+.footer_conteiner_9689.active .footer_9689_list {
+  display: block;
+}
+
+.footer_conteiner_9689.active .footer_title:before {
+  transform: rotate(-180deg);
+  top: -5px;
+}
+/* end footer mobile accordion */
+/* end footer mobile */
