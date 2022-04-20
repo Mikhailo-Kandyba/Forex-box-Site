@@ -3,10 +3,18 @@
 
 .width-24 {
   width: 24px;
+
+  @include breakpoint($desktop) {
+    width: 16px;
+  }
 }
 
 .width-120 {
   width: 120px;
+
+  @include breakpoint($desktop) {
+    width: 88px;
+  }
 }
 
 .d-none-sm {

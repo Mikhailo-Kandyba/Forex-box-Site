@@ -77,6 +77,10 @@
 
 .description-service-wrap {
   margin-bottom: 95px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 70px;
+  }
 }
 
 .description-service {
@@ -85,6 +89,10 @@
   border-radius: 5px;
   padding: 24px 63px 65px;
 
+  @include breakpoint($desktop) {
+    padding: 29px 63px 20px;
+  }
+
   h4 {
     font-size: $font-size-base + 10;
     line-height: $line-height-base +12;
@@ -92,6 +100,14 @@
     text-align: center;
     margin-left: 75px;
     margin-bottom: 37px;
+
+    @include breakpoint($desktop) {
+      font-family: $lato-regular;
+      font-size: $font-size-base;
+      line-height: $line-height-base + 3;
+      margin-left: 0;
+      margin-bottom: 34px;
+    }
   }
 }
 
@@ -99,6 +115,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include breakpoint($desktop) {
+    flex-direction: column-reverse;
+  }
+
+  > .service-item {
+    width: 30%;
+
+    @include breakpoint($desktop) {
+      width: 100%;
+    }
+  }
 }
 
 .big-figure {
@@ -110,7 +138,6 @@
 
 .service-item {
   display: flex;
-  width: 33.3%;
   position: relative;
 
   &:after {
@@ -122,6 +149,10 @@
     width: 1px;
     height: 140px;
     background: rgba(235, 128, 12, 0.2);
+
+    @include breakpoint($desktop) {
+      display: none;
+    }
   }
 
   &:last-child {
@@ -131,8 +162,21 @@
   }
 
   ul {
+    @include breakpoint($desktop) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 13px;
+    }
+
     li {
       margin-bottom: 23px;
+
+      @include breakpoint($desktop) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -140,6 +184,10 @@
     }
 
     span {
+      font-family: $lato-bold;
+      font-size: $font-size-base + 40;
+      line-height: $line-height-base + 48;
+      padding-right: 10px;
       display: none;
 
       @include breakpoint($desktop) {
@@ -149,15 +197,48 @@
   }
 }
 
+.service-item-area {
+  display: flex;
+  width: 70%;
+
+  @include breakpoint($desktop) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .service-item {
+    width: 50%;
+
+    @include breakpoint($desktop) {
+      width: 100%;
+    }
+  }
+
+  > .service-item {
+    margin-bottom: 17px;
+  }
+}
+
 .name-price {
   font-size: $font-size-base + 45;
   line-height: $line-height-base + 54;
   margin-bottom: 17px;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 45;
+    line-height: $line-height-base + 22;
+    margin-bottom: 22px;
+  }
 }
 
 .price {
   font-size: $font-size-base + 25;
   line-height: $line-height-base + 30;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 5;
+    line-height: $line-height-base + 6;
+  }
 }
 
 .service-center {
@@ -179,6 +260,11 @@
   position: absolute;
   top: 10px;
   right: 12px;
+
+  @include breakpoint($desktop) {
+    top: 17px;
+    right: 22px;
+  }
 
   /* The actual popup */
   .popup-text {
@@ -243,6 +329,10 @@
 .advantages-wrap {
   margin-bottom: 105px;
 
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
   h4 {
     font-family: $lato-regular;
     font-size: $font-size-base + 15;
@@ -293,15 +383,33 @@
   text-align: center;
   margin-bottom: 120px;
 
+  @include breakpoint($desktop) {
+    margin-bottom: 68px;
+  }
+
   h4 {
     font-family: $lato-bold;
     font-size: $font-size-base + 15;
     line-height: $line-height-base + 18;
     margin-bottom: 38px;
+
+    @include breakpoint($desktop) {
+      font-family: $lato-regular;
+      font-size: $font-size-base + 10;
+      line-height: $line-height-base + 12;
+      margin-bottom: 30px;
+    }
   }
 
   > p {
     margin-bottom: 25px;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      color: $black;
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -310,6 +418,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
+  @include breakpoint($desktop) {
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
 
   .btn-area {
     max-width: 590px;
@@ -325,10 +438,19 @@
   max-width: 788px;
   width: 100%;
 
+  @include breakpoint($desktop) {
+    max-width: 100%;
+  }
+
   p {
     font-family: $lato-extra-bold;
     font-size: $font-size-base + 8;
     line-height: $line-height-base + 6;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base + 5;
+      line-height: $line-height-base + 6;
+    }
 
     sup {
       font-family: $lato-bold;
@@ -346,6 +468,10 @@
   width: 586px;
   max-width: 100%;
   margin-right: 82px;
+
+  @include breakpoint($desktop) {
+    margin-right: 142px;
+  }
 }
 
 .progress {
@@ -362,6 +488,12 @@
     font-size: $font-size-base + 20;
     line-height: $line-height-base + 24;
     text-align: center;
+
+    @include breakpoint($desktop) {
+      font-family: $lato-regular;
+      font-size: $font-size-base + 10;
+      line-height: $line-height-base + 12;
+    }
   }
 }
 
@@ -387,6 +519,10 @@
 .blog_item {
   width: 33.3%;
   padding: 10px 30px;
+
+  @include breakpoint($desktop) {
+    width: 50%;
+  }
 }
 
 .blog_section {
@@ -610,6 +746,10 @@
     top: -6%;
     right: -20%;
     width: 494px;
+
+    @include breakpoint($desktop) {
+      top: 0;
+    }
   }
 
   .ellipse-5 {
@@ -622,6 +762,10 @@
     top: 12%;
     left: -9%;
     width: 430px;
+
+    @include breakpoint($desktop) {
+      left: -27%;
+    }
   }
 
   .ellipse-7 {
@@ -634,6 +778,11 @@
     top: 14%;
     right: 12%;
     width: 398px;
+
+    @include breakpoint($desktop) {
+      top: 17%;
+      right: 1%;
+    }
   }
 
   .ellipse-9 {

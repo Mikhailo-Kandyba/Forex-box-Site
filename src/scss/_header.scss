@@ -4,12 +4,36 @@
 .header {
   padding: 35px 0;
   margin-bottom: 55px;
+
+  @include breakpoint($desktop) {
+    padding: 27px 0;
+    margin-bottom: 13px;
+  }
+}
+
+.entrance {
+  span {
+    @include breakpoint($desktop) {
+      display: none;
+    }
+  }
+
+  img {
+    display: none;
+    @include breakpoint($desktop) {
+      display: block;
+    }
+  }
 }
 
 .logo {
   display: flex;
   align-items: flex-end;
   margin-right: 20px;
+
+  @include breakpoint($desktop) {
+    margin-right: 5px;
+  }
 
   > img {
     margin-right: 7px;
@@ -26,6 +50,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include breakpoint($tablet) {
+    position: fixed;
+    top: 0;
+    right: 200%;
+    transition: all .25s ease;
+    min-width: 230px;
+    background: $white;
+    flex-direction: column;
+    z-index: 100;
+  }
 }
 
 .menu {
@@ -35,12 +70,10 @@
   flex-wrap: wrap;
   margin-top: 12px;
 
-  @include breakpoint($mobile) {
-    display: block;
-    background: $white;
-    min-width: inherit;
-    padding: 50px 30px;
-    border-radius: 5px;
+  li {
+    @include breakpoint($desktop) {
+      margin: 0 8px;
+    }
   }
 
   a {
@@ -48,6 +81,12 @@
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 2;
     padding: 5px 10px;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 4;
+      padding: 0 5px;
+    }
   }
 
   .btn-mobile {
@@ -66,12 +105,22 @@
   width: 100%;
   flex-wrap: wrap;
 
+  @include breakpoint($desktop) {
+    max-width: 135px;
+  }
+
   .btn-area {
     margin-bottom: 5px;
     margin-left: 16px;
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:last-child {
+      @include breakpoint($desktop) {
+        display: none;
+      }
     }
   }
 
@@ -83,6 +132,10 @@
       padding: 10px 18px;
       background: $white;
       border-radius: 4px;
+
+      @include breakpoint($desktop) {
+        padding:  7px 16px;
+      }
 
       &:hover {
         background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
@@ -126,7 +179,7 @@
 }
 
 .show-menu {
-  @include breakpoint($mobile) {
+  @include breakpoint($tablet) {
     right: 0;
   }
 }
@@ -143,7 +196,7 @@
   z-index: 103;
   transform: rotate(180deg);
 
-  @include breakpoint($mobile) {
+  @include breakpoint($tablet) {
     display: block;
   }
 
