@@ -27,6 +27,10 @@
 .btn-width {
   max-width: 310px;
   width: 100%;
+
+  @include breakpoint($tablet) {
+    max-width: 265px;
+  }
 }
 
 .width-100 {
@@ -64,6 +68,10 @@
 
   @include breakpoint($desktop) {
     max-width: 273px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 186px;
   }
 }
 

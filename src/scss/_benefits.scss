@@ -1,0 +1,159 @@
+@import "mixin";
+@import "variables";
+
+.benefits-wrap {
+  margin-bottom: 105px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 5px;
+  }
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+
+  h4 {
+    font-family: $lato-regular;
+    font-size: $font-size-base + 15;
+    line-height: $line-height-base + 18;
+    color: $mine-shaft;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 3;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.benefits_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include breakpoint($tablet) {
+    justify-content: center;
+  }
+}
+
+.benefits_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint($tablet) {
+    width: 33.3%;
+    margin-bottom: 53px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+}
+
+.benefits_icon {
+  max-width: 89px;
+  width: 100%;
+
+  @include breakpoint($tablet) {
+    max-width: 52px;
+    margin-bottom: 10px;
+    height: 55px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    @include breakpoint($mobile) {
+      width: 30%;
+    }
+  }
+}
+
+.benefits_number {
+  display: block;
+  font-family: $lato-extra-bold;
+  font-size: $font-size-base + 15;
+  line-height: $line-height-base + 18;
+  margin-bottom: 16px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 10px;
+    line-height: $line-height-base + 12;
+    margin-bottom: 10px;
+  }
+}
+
+.benefits_text {
+  max-width: 230px;
+
+  @include breakpoint($tablet) {
+    max-width: 100%;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 3;
+  }
+
+  @include breakpoint($mobile) {
+    margin: 0 auto;
+  }
+}
+
+.benefits_mobile {
+  display: none;
+
+  @include breakpoint($mobile) {
+    margin: 40px auto 60px;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+}
+
+.benefits {
+  @include breakpoint($tablet) {
+    display: block;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.benefits_mobile_tab {
+  @include breakpoint($mobile) {
+    font-size: 30px;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b4b4b4;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+}
+
+.benefits_mobile_underline {
+  @include breakpoint($mobile) {
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    background: linear-gradient(90deg, #EB800C 0%, #FABB35 100%);
+    top: 36px;
+    left: 0;
+    display: block;
+  }
+}
+
+
+

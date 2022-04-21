@@ -20,6 +20,10 @@ form {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @include breakpoint($tablet) {
+    max-width: 455px;
+  }
 }
 
 .custom_select.active {
@@ -83,6 +87,10 @@ form {
   font-weight: 400;
   color: $tundora;
   text-align: start;
+
+  @include breakpoint($tablet) {
+    padding: 19px 35px !important;
+  }
 
   @include breakpoint($desktop) {
     padding: 22px 35px;
@@ -773,6 +781,11 @@ form {
             @include breakpoint($desktop) {
               line-height: $line-height-base;
             }
+
+            @include breakpoint($tablet) {
+              font-size: $font-size-base;
+              line-height: $line-height-base;
+            }
           }
         }
         .tab {
@@ -1076,9 +1089,9 @@ form {
       }
     }
   }
-  .faq_arrows_block {
-    display: none;
-  }
+  //.faq_arrows_block {
+  //  display: none;
+  //}
   .faq_mobile_slider_arrows {
     display: block;
   }
@@ -1690,10 +1703,10 @@ form {
     max-width: 100%;
     padding: 0;
   }
-  .custom_select {
-    position: relative;
-    width: 100%;
-    max-width: 400px;}
+  //.custom_select {
+  //  position: relative;
+  //  width: 100%;
+  //  max-width: 600px;}
   button.tariff_constructor_button.button_invert{
     width: 100%;
     max-width: 400px;

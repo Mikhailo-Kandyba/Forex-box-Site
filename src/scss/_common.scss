@@ -81,6 +81,10 @@
   @include breakpoint($desktop) {
     margin-bottom: 70px;
   }
+
+  @include breakpoint($tablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .description-service {
@@ -91,6 +95,10 @@
 
   @include breakpoint($desktop) {
     padding: 29px 63px 20px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 29px 38px 32px;
   }
 
   h4 {
@@ -107,6 +115,12 @@
       line-height: $line-height-base + 3;
       margin-left: 0;
       margin-bottom: 34px;
+    }
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 2;
+      margin-bottom: 26px;
     }
   }
 }
@@ -169,6 +183,17 @@
       padding: 0 13px;
     }
 
+    @include breakpoint($tablet) {
+      padding: 0;
+    }
+
+    p {
+      @include breakpoint($tablet) {
+        font-size: $font-size-base - 2;
+        line-height: $line-height-base - 2;
+      }
+    }
+
     li {
       margin-bottom: 23px;
 
@@ -193,6 +218,11 @@
       @include breakpoint($desktop) {
         display: block;
       }
+
+      @include breakpoint($tablet) {
+        font-size: $font-size-base + 30;
+        line-height: $line-height-base + 36;
+      }
     }
   }
 }
@@ -216,6 +246,10 @@
 
   > .service-item {
     margin-bottom: 17px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 21px;
+    }
   }
 }
 
@@ -228,6 +262,12 @@
     font-size: $font-size-base + 45;
     line-height: $line-height-base + 22;
     margin-bottom: 22px;
+  }
+
+  @include breakpoint($tablet) {
+    font-family: $lato-regular;
+    font-size: $font-size-base + 25;
+    line-height: $line-height-base + 8;
   }
 }
 
@@ -264,6 +304,12 @@
   @include breakpoint($desktop) {
     top: 17px;
     right: 22px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 42px;
+    top: 16px;
+    right: 15px;
   }
 
   /* The actual popup */
@@ -326,65 +372,16 @@
   to {opacity:1 ;}
 }
 
-.advantages-wrap {
-  margin-bottom: 105px;
-
-  @include breakpoint($desktop) {
-    display: none;
-  }
-
-  h4 {
-    font-family: $lato-regular;
-    font-size: $font-size-base + 15;
-    line-height: $line-height-base + 18;
-    color: $mine-shaft;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-}
-
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 -20px;
-
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    width: 20%;
-    padding: 0 20px;
-    margin-bottom: 10px;
-  }
-
-  .description-area {
-    padding: 0 5px;
-  }
-
-  .img-area {
-    max-width: 80px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  span {
-    display: block;
-    font-family: $lato-extra-bold;
-    font-size: $font-size-base + 15;
-    line-height: $line-height-base + 18;
-    margin-bottom: 16px;
-  }
-}
-
 .ping-test-wrap {
   text-align: center;
   margin-bottom: 120px;
 
   @include breakpoint($desktop) {
     margin-bottom: 68px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-bottom: 47px;
   }
 
   h4 {
@@ -398,6 +395,12 @@
       font-size: $font-size-base + 10;
       line-height: $line-height-base + 12;
       margin-bottom: 30px;
+    }
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 3;
+      margin-bottom: 10px;
     }
   }
 
@@ -418,6 +421,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 10px;
+  }
 
   @include breakpoint($desktop) {
     justify-content: space-between;
@@ -465,12 +472,17 @@
   background: $ebb;
   border-radius: 9px;
   height: 5px;
-  width: 586px;
-  max-width: 100%;
+  max-width: 586px;
+  width: 100%;
   margin-right: 82px;
 
   @include breakpoint($desktop) {
     margin-right: 142px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 455px;
+    margin-right: 90px;
   }
 }
 
@@ -493,6 +505,11 @@
       font-family: $lato-regular;
       font-size: $font-size-base + 10;
       line-height: $line-height-base + 12;
+    }
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 3;
     }
   }
 }

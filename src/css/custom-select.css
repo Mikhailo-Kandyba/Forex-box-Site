@@ -17,6 +17,9 @@ form {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  @media only screen and (max-width: 1023px) {
+    .custom_select {
+      max-width: 455px; } }
 
 .custom_select.active {
   border-radius: 5px;
@@ -62,6 +65,9 @@ form {
   font-weight: 400;
   color: #474747;
   text-align: start; }
+  @media only screen and (max-width: 1023px) {
+    .custom_select_title {
+      padding: 19px 35px !important; } }
   @media only screen and (max-width: 1334px) {
     .custom_select_title {
       padding: 22px 35px; } }
@@ -651,6 +657,13 @@ form {
           #faq_tabs_list input:checked + label .partners_text,
           #faq_tabs_list input:checked + label .faq_text {
             line-height: 24px; } }
+        @media only screen and (max-width: 1023px) {
+          #partners_list input:checked + label .partners_text,
+          #partners_list input:checked + label .faq_text,
+          #faq_tabs_list input:checked + label .partners_text,
+          #faq_tabs_list input:checked + label .faq_text {
+            font-size: 20px;
+            line-height: 24px; } }
     #partners_list input:checked + .tab:after,
     #faq_tabs_list input:checked + .tab:after {
       content: url("../images/pointer-right.svg"); }
@@ -838,8 +851,6 @@ form {
     font-weight: 400; }
     .accordion-header.active-accordion .faq_mobile_text:after {
       display: none; }
-  .faq_arrows_block {
-    display: none; }
   .faq_mobile_slider_arrows {
     display: block; }
   .faq_mobile_slider_dots_box {
@@ -1267,10 +1278,6 @@ form {
     min-width: 100%;
     max-width: 100%;
     padding: 0; }
-  .custom_select {
-    position: relative;
-    width: 100%;
-    max-width: 400px; }
   button.tariff_constructor_button.button_invert {
     width: 100%;
     max-width: 400px; }
