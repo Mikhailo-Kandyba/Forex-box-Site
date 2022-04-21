@@ -9,4 +9,8 @@
   @include breakpoint($desktop) {
     padding: 0 65px;
   }
+
+  @include breakpoint($tablet) {
+    padding: 0 50px;
+  }
 }

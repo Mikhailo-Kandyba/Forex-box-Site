@@ -7,6 +7,10 @@
   @include breakpoint($desktop) {
     width: 16px;
   }
+
+  @include breakpoint($tablet) {
+    width: 26px;
+  }
 }
 
 .width-120 {
@@ -14,6 +18,10 @@
 
   @include breakpoint($desktop) {
     width: 88px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 132px;
   }
 }
 
@@ -43,6 +51,10 @@
 
 .bg-white {
   background: $white;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 

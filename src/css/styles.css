@@ -181,9 +181,9 @@ h6 {
   background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
 
 .btn-background {
-  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%); }
+  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%) !important; }
   .btn-background:hover {
-    background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
+    background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%) !important; }
 
 .container {
   max-width: 1355px;
@@ -192,6 +192,9 @@ h6 {
   @media only screen and (max-width: 1334px) {
     .container {
       padding: 0 65px; } }
+  @media only screen and (max-width: 1023px) {
+    .container {
+      padding: 0 50px; } }
 
 .header {
   padding: 35px 0;
@@ -200,6 +203,18 @@ h6 {
     .header {
       padding: 27px 0;
       margin-bottom: 13px; } }
+  @media only screen and (max-width: 1023px) {
+    .header {
+      padding: 33px 0;
+      margin-bottom: 6px; } }
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media only screen and (max-width: 1023px) {
+    .header-content {
+      padding-right: 76px; } }
 
 @media only screen and (max-width: 1334px) {
   .entrance span {
@@ -220,23 +235,79 @@ h6 {
       margin-right: 5px; } }
   .logo > img {
     margin-right: 7px; }
+    @media only screen and (max-width: 1023px) {
+      .logo > img {
+        margin-right: 11px; } }
   .logo img:last-child {
     margin-right: 0; }
 
 .menu-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%; }
   @media only screen and (max-width: 1023px) {
     .menu-wrap {
       position: fixed;
       top: 0;
       right: 200%;
       transition: all .25s ease;
-      min-width: 230px;
-      background: #fff;
+      max-width: 422px;
+      min-height: 100%;
+      background: #fbf9f8;
       flex-direction: column;
-      z-index: 100; } }
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 100;
+      overflow: scroll; } }
+
+.info-user-mobile {
+  display: none; }
+  @media only screen and (max-width: 1023px) {
+    .info-user-mobile {
+      position: relative;
+      z-index: 110;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      padding: 44px 0; } }
+  .info-user-mobile h4 {
+    font-family: Lato-Regular;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 6px; }
+  .info-user-mobile a {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px; }
+    .info-user-mobile a:hover {
+      text-decoration: underline; }
+  .info-user-mobile .btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
+    background: -o-linear-gradient(#FBF9F8, #FBF9F8) padding-box, -o-linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+    background: linear-gradient(#FBF9F8, #FBF9F8) padding-box, linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border-radius: 5px;
+    max-width: 277px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; }
+  .info-user-mobile .social-network li:last-child {
+    margin: 0; }
+  .info-user-mobile > div {
+    margin-bottom: 37px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .menu {
   display: flex;
@@ -244,9 +315,28 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 12px; }
+  @media only screen and (max-width: 1023px) {
+    .menu {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 0;
+      padding-top: 108px;
+      background: #fff;
+      z-index: 110; } }
   @media only screen and (max-width: 1334px) {
     .menu li {
       margin: 0 8px; } }
+  @media only screen and (max-width: 1023px) {
+    .menu li {
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
+  @media only screen and (max-width: 1023px) {
+    .menu .active {
+      font-family: Lato-Regular;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: -3px 0px 10px rgba(154, 74, 24, 0.15);
+      border-bottom: none; } }
   .menu a {
     display: block;
     font-size: 18px;
@@ -257,6 +347,18 @@ h6 {
         font-size: 16px;
         line-height: 20px;
         padding: 0 5px; } }
+    @media only screen and (max-width: 1023px) {
+      .menu a {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 29px 0;
+        border-bottom: 1px solid #e8e4e2; } }
+    @media only screen and (max-width: 1023px) {
+      .menu a:hover {
+        font-family: Lato-Regular;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: -3px 0px 10px rgba(154, 74, 24, 0.15);
+        border-bottom: none; } }
   .menu .btn-mobile {
     display: none !important; }
     @media only screen and (max-width: 767px) {
@@ -317,26 +419,69 @@ h6 {
       .btn-group .item {
         padding: 5px 7px; } }
 
+.overlay {
+  display: none; }
+  @media only screen and (max-width: 1023px) {
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 100; } }
+
+.menu-area {
+  width: 100%;
+  height: 1000px !important;
+  min-height: inherit;
+  position: relative;
+  z-index: 110; }
+
 @media only screen and (max-width: 1023px) {
   .show-menu {
     right: 0; } }
 
+.show-menu .overlay {
+  display: block; }
+
+.btn-menu-wrap {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  width: 59px;
+  height: 43px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
+  background: -o-linear-gradient(#FBF9F8, #FBF9F8) padding-box, -o-linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  background: linear-gradient(#FBF9F8, #FBF9F8) padding-box, linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-radius: 5px; }
+  @media only screen and (max-width: 1023px) {
+    .btn-menu-wrap {
+      display: block; } }
+
 .btn-menu {
   display: none;
   position: absolute;
-  top: 5px;
-  right: 0;
+  top: 10px;
+  right: 12px;
   height: 22px;
-  width: 28px;
+  width: 32px;
   cursor: pointer;
   transition: all .25s ease;
   z-index: 103;
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  background: transparent; }
   @media only screen and (max-width: 1023px) {
     .btn-menu {
       display: block; } }
   .btn-menu span {
-    background: #000;
+    background: linear-gradient(180deg, #DF6418 0%, #FABB35 100%);
     border: none;
     height: 2px;
     width: 100%;
@@ -348,13 +493,16 @@ h6 {
   .btn-menu .middle {
     transform: translate(0, -50%);
     top: 50%;
-    width: 70%; }
+    width: 100%; }
   .btn-menu .bottom {
     top: auto;
-    bottom: 0; }
+    bottom: 0;
+    left: 3px;
+    width: 80%; }
   .btn-menu .top {
     bottom: 0;
-    width: 40%; }
+    width: 80%;
+    left: 3px; }
   .btn-menu.active {
     background: transparent; }
     .btn-menu.active .top {
@@ -2936,12 +3084,18 @@ form {
   @media only screen and (max-width: 1334px) {
     .width-24 {
       width: 16px; } }
+  @media only screen and (max-width: 1023px) {
+    .width-24 {
+      width: 26px; } }
 
 .width-120 {
   width: 120px; }
   @media only screen and (max-width: 1334px) {
     .width-120 {
       width: 88px; } }
+  @media only screen and (max-width: 1023px) {
+    .width-120 {
+      width: 132px; } }
 
 @media only screen and (max-width: 767px) {
   .d-none-sm {
@@ -2963,3 +3117,6 @@ form {
 
 .bg-white {
   background: #fff; }
+
+.overflow-hidden {
+  overflow: hidden; }
