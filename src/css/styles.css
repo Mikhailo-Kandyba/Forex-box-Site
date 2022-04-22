@@ -1409,15 +1409,16 @@ h6 {
     .accordion input:checked ~ .accordion-content {
       padding: 0; } }
 
-.accordion input[type=checkbox] + label::after {
-  content: '';
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  background-image: url("../images/arrow-accordion.svg");
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 12px; }
+@media only screen and (max-width: 767px) {
+  .accordion input[type=checkbox] + label::after {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    background-image: url("../images/arrow-accordion.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 12px; } }
 
 .accordion input[type=checkbox]:checked + label::after {
   transform: rotate(-180deg); }
@@ -3443,11 +3444,18 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 985px; }
+  max-width: 985px;
+  width: 100%; }
+  @media only screen and (max-width: 1334px) {
+    .payment-list {
+      max-width: 100%;
+      justify-content: space-between; } }
   .payment-list li {
     width: 33.3%;
     padding: 0 20px; }
+    @media only screen and (max-width: 1334px) {
+      .payment-list li {
+        padding: 0 9px; } }
 
 .payment_area {
   display: flex;
@@ -3467,6 +3475,10 @@ form {
   -moz-user-select: none;
   -ms-user-select: none;
   border-radius: 5px; }
+  @media only screen and (max-width: 1334px) {
+    .payment_area {
+      min-height: 130px;
+      padding: 17px 0; } }
   .payment_area span {
     display: block; }
 
@@ -3475,6 +3487,11 @@ form {
   font-size: 35px;
   line-height: 42px;
   margin-bottom: 16px; }
+  @media only screen and (max-width: 1334px) {
+    .payment_number {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 10px; } }
 
 .payment_text {
   max-width: 227px;
@@ -3482,18 +3499,30 @@ form {
 
 .payment-methods-wrap {
   margin-bottom: 100px; }
+  @media only screen and (max-width: 1334px) {
+    .payment-methods-wrap {
+      margin-bottom: 70px; } }
   .payment-methods-wrap h4 {
     font-family: Lato-Bold;
     font-size: 35px;
     line-height: 42px;
     text-align: center;
     margin-bottom: 45px; }
+    @media only screen and (max-width: 1334px) {
+      .payment-methods-wrap h4 {
+        font-family: Lato-Regular;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 26px; } }
 
 .cards-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 35px; }
+  @media only screen and (max-width: 1334px) {
+    .cards-list {
+      margin-bottom: 16px; } }
 
 .cards_number {
   font-size: 25px;
@@ -3506,15 +3535,27 @@ form {
   position: relative;
   -webkit-text-stroke-color: #fabb35 !important;
   padding-right: 10px; }
+  @media only screen and (max-width: 1334px) {
+    .cards_number {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .cards_text {
   font-family: Lato-Regular;
   font-size: 25px;
   line-height: 30px; }
+  @media only screen and (max-width: 1334px) {
+    .cards_text {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .cards_item {
   text-align: center;
   width: 25%; }
+
+@media only screen and (max-width: 1334px) {
+  .cards_title {
+    margin-bottom: 5px; } }
 
 .holder-btn {
   display: flex;
@@ -3533,11 +3574,20 @@ form {
     max-width: 285px;
     padding: 15px;
     width: 100%; }
+    @media only screen and (max-width: 1334px) {
+      .holder-btn .btn {
+        max-width: 300px; } }
     .holder-btn .btn:hover:hover {
       background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
 
 .payment-wrap {
+  display: flex;
+  justify-content: center;
   margin-bottom: 70px; }
+  @media only screen and (max-width: 1334px) {
+    .payment-wrap {
+      justify-content: space-between;
+      margin-bottom: 65px; } }
 
 .ellipse-pyment-position .ellipse-3 {
   bottom: 72%;

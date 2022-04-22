@@ -229,14 +229,16 @@
 }
 
 .accordion input[type=checkbox] + label::after {
-  content: '';
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  background-image: url("../images/arrow-accordion.svg");
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 12px;
+  @include breakpoint($mobile) {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    background-image: url("../images/arrow-accordion.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 12px;
+  }
 }
 
 .accordion input[type=checkbox]:checked + label::after {
