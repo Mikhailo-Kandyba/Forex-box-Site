@@ -12,6 +12,7 @@
     display: block;
   }
 
+
   h4 {
     font-family: $lato-regular;
     font-size: $font-size-base + 15;
@@ -72,8 +73,8 @@
   }
 
   @include breakpoint($mobile) {
-    width: 100%;
-    height: auto;
+    max-width: 222px;
+    height: 70px;
   }
 
   img {
@@ -95,6 +96,12 @@
     line-height: $line-height-base + 12;
     margin-bottom: 10px;
   }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 15;
+    line-height: $line-height-base + 18;
+    margin-bottom: 4px;
+  }
 }
 
 .benefits_text {
@@ -107,7 +114,10 @@
   }
 
   @include breakpoint($mobile) {
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
     margin: 0 auto;
+    max-width: 230px;
   }
 }
 
@@ -115,10 +125,10 @@
   display: none;
 
   @include breakpoint($mobile) {
-    margin: 40px auto 60px;
     width: 100%;
     float: left;
     display: block;
+    margin-bottom: 25px;
   }
 }
 
@@ -134,26 +144,37 @@
 
 .benefits_mobile_tab {
   @include breakpoint($mobile) {
-    font-size: 30px;
-    font-weight: 800;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #b4b4b4;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-  }
-}
-
-.benefits_mobile_underline {
-  @include breakpoint($mobile) {
-    position: absolute;
-    height: 2px;
-    width: 35px;
-    background: linear-gradient(90deg, #EB800C 0%, #FABB35 100%);
-    top: 36px;
-    left: 0;
-    display: block;
+    @include transparent-text;
   }
 }
 
 
+
+.tabs-menu-active {
+  .benefits_mobile_underline {
+    @include breakpoint($mobile) {
+      position: absolute;
+      height: 2px;
+      width: 35px;
+      background: linear-gradient(90deg, #EB800C 0%, #FABB35 100%);
+      top: 36px;
+      left: 0;
+      display: block;
+    }
+  }
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-menu.tabs-menu-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35));
+  background: -o-linear-gradient(top, #EB800C 0%, #FABB35 100%);
+  background: linear-gradient(180deg, #EB800C 0%, #FABB35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+}
 

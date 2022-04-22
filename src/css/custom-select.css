@@ -2,6 +2,11 @@
 /*select*/
 form {
   margin-right: 30px; }
+  @media only screen and (max-width: 767px) {
+    form {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 25px; } }
 
 .custom_select {
   position: relative;
@@ -20,6 +25,9 @@ form {
   @media only screen and (max-width: 1023px) {
     .custom_select {
       max-width: 455px; } }
+  @media only screen and (max-width: 767px) {
+    .custom_select {
+      max-width: 100%; } }
 
 .custom_select.active {
   border-radius: 5px;
@@ -29,10 +37,14 @@ form {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
     top: 16px; }
+    @media only screen and (max-width: 767px) {
+      .custom_select.active .custom_select_title::before {
+        top: 10px !important; } }
   .custom_select.active .ping_select_title {
     box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.08);
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    max-width: 100%; }
     .custom_select.active .ping_select_title::before {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -65,12 +77,15 @@ form {
   font-weight: 400;
   color: #474747;
   text-align: start; }
-  @media only screen and (max-width: 1023px) {
-    .custom_select_title {
-      padding: 19px 35px !important; } }
   @media only screen and (max-width: 1334px) {
     .custom_select_title {
       padding: 22px 35px; } }
+  @media only screen and (max-width: 1023px) {
+    .custom_select_title {
+      padding: 19px 35px !important; } }
+  @media only screen and (max-width: 767px) {
+    .custom_select_title {
+      padding: 9px 16px !important; } }
   .custom_select_title::before {
     content: url("../images/select-arrow.svg");
     position: absolute;
@@ -91,6 +106,12 @@ form {
       font-family: Lato-Regular;
       font-size: 20px;
       line-height: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .ping_select_title {
+      font-size: 16px;
+      line-height: 21px;
+      max-width: 180px;
+      border-right: 1.5px solid #FABB35; } }
   .ping_select_title::before {
     content: url("../images/select-arrow.svg");
     position: absolute;
@@ -127,6 +148,11 @@ form {
   line-height: 33px;
   text-align: start;
   color: #474747; }
+  @media only screen and (max-width: 767px) {
+    .custom_select_label {
+      font-family: Lato-Regular;
+      font-size: 16px;
+      line-height: 21px; } }
 
 .ping_select {
   position: relative;
@@ -140,7 +166,6 @@ form {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 590px;
   height: auto;
   min-height: 65px;
   display: inline-block; }
@@ -339,10 +364,16 @@ form {
   margin-left: 25px;
   flex-grow: 1;
   text-align: left; }
+  @media only screen and (max-width: 767px) {
+    .faq_text {
+      margin-left: 0; } }
 
 .tabs-content {
   max-width: 530px;
   margin-left: 30px; }
+  @media only screen and (max-width: 767px) {
+    .tabs-content {
+      margin-left: 0; } }
 
 .tab-item {
   text-align: start;
@@ -599,6 +630,10 @@ form {
   background: #fefefd;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
+  @media only screen and (max-width: 767px) {
+    .tab {
+      padding: 15px 5px 20px 22px;
+      height: auto !important; } }
 
 .tab-partners {
   width: 30%; }
@@ -614,6 +649,11 @@ form {
     line-height: 48px;
     text-align: center;
     margin-bottom: 53px; }
+    @media only screen and (max-width: 767px) {
+      .partners-wrap h4 {
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 18px; } }
 
 #partners_list,
 #faq_tabs_list {
@@ -1431,6 +1471,10 @@ form {
   font-size: 17px;
   font-weight: 300;
   padding: 0 30px 0 0 !important; }
+  @media only screen and (max-width: 767px) {
+    .text_body {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .social_links_box {
   margin: 20px 0;
@@ -1575,6 +1619,10 @@ form {
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 18px; }
+  @media only screen and (max-width: 767px) {
+    .text_title {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .tab-item_2 {
   display: -webkit-box;
@@ -1683,6 +1731,9 @@ form {
   width: 100%;
   height: 400px;
   overflow: hidden; }
+  @media only screen and (max-width: 767px) {
+    #partners_list {
+      height: 400px !important; } }
 
 .partners_tab_pages {
   margin: 0; }

@@ -85,6 +85,10 @@
   @include breakpoint($tablet) {
     margin-bottom: 60px;
   }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 95px;
+  }
 }
 
 .description-service {
@@ -99,6 +103,10 @@
 
   @include breakpoint($tablet) {
     padding: 29px 38px 32px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 29px 29px 32px;
   }
 
   h4 {
@@ -122,6 +130,10 @@
       line-height: $line-height-base - 2;
       margin-bottom: 26px;
     }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -139,6 +151,13 @@
 
     @include breakpoint($desktop) {
       width: 100%;
+      //border: none;
+    }
+
+    .btn-area {
+      @include breakpoint($mobile) {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -148,11 +167,30 @@
   font-size: $font-size-base + 200;
   line-height: $line-height-base + 131;
   margin-right: 25px;
+
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
+  @include breakpoint($mobile) {
+    display: block;
+    font-size: $font-size-base + 30;
+    line-height: $line-height-base + 14;
+    margin-right: 0;
+    margin-bottom: 11px;
+  }
 }
 
 .service-item {
   display: flex;
   position: relative;
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(235, 128, 12, 0.2);
+    padding-bottom: 17px;
+  }
 
   &:after {
     content: '';
@@ -187,10 +225,19 @@
       padding: 0;
     }
 
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+
     p {
       @include breakpoint($tablet) {
         font-size: $font-size-base - 2;
         line-height: $line-height-base - 2;
+      }
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 4;
+        line-height: $line-height-base - 3;
       }
     }
 
@@ -201,6 +248,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 0;
+      }
+
+      @include breakpoint($mobile) {
+        justify-content: center;
+        margin-bottom: 8px;
       }
 
       &:last-child {
@@ -223,6 +275,10 @@
         font-size: $font-size-base + 30;
         line-height: $line-height-base + 36;
       }
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
     }
   }
 }
@@ -235,6 +291,10 @@
     flex-direction: column;
     width: 100%;
   }
+
+  //@include breakpoint($mobile) {
+  //  margin-bottom: 15px;
+  //}
 
   .service-item {
     width: 50%;
@@ -249,6 +309,10 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 21px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 17px;
     }
   }
 }
@@ -268,6 +332,10 @@
     font-family: $lato-regular;
     font-size: $font-size-base + 25;
     line-height: $line-height-base + 8;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 15px;
   }
 }
 
@@ -310,6 +378,10 @@
     width: 42px;
     top: 16px;
     right: 15px;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
   }
 
   /* The actual popup */
@@ -384,6 +456,10 @@
     margin-bottom: 47px;
   }
 
+  @include breakpoint($mobile) {
+    margin-bottom: 53px;
+  }
+
   h4 {
     font-family: $lato-bold;
     font-size: $font-size-base + 15;
@@ -402,6 +478,10 @@
       line-height: $line-height-base + 3;
       margin-bottom: 10px;
     }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 6px;
+    }
   }
 
   > p {
@@ -413,6 +493,11 @@
       color: $black;
       margin-bottom: 18px;
     }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 3;
+    }
   }
 }
 
@@ -422,13 +507,18 @@
   align-items: center;
   margin-bottom: 20px;
 
+  @include breakpoint($desktop) {
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
   @include breakpoint($tablet) {
     margin-bottom: 10px;
   }
 
-  @include breakpoint($desktop) {
-    justify-content: space-between;
-    margin-bottom: 14px;
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .btn-area {
@@ -447,6 +537,11 @@
 
   @include breakpoint($desktop) {
     max-width: 100%;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: center;
   }
 
   p {
@@ -483,6 +578,12 @@
   @include breakpoint($tablet) {
     max-width: 455px;
     margin-right: 90px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -782,6 +883,11 @@
 
     @include breakpoint($desktop) {
       left: -27%;
+    }
+
+    @include breakpoint($mobile) {
+      top: -87%;
+      left: -8%;
     }
   }
 

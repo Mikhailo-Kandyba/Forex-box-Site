@@ -31,6 +31,10 @@
     padding: 3px 0 10px;
   }
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   .btn-area {
     max-width: 295px;
     margin: 0 auto;
@@ -58,6 +62,10 @@
 
   @include breakpoint($tablet) {
     width: 33.3%;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
   }
 
   &:last-child {
@@ -117,6 +125,11 @@
     font-size: $font-size-base - 7;
     line-height: $line-height-base - 4;
   }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 13;
+    line-height: $line-height-base - 13;
+  }
 }
 
 /* accordion styles */
@@ -154,7 +167,7 @@
     }
 
     @include breakpoint($mobile) {
-      padding: 15px 70px 15px 20px;
+      padding: 8px 0;
     }
 
     span {
@@ -211,7 +224,7 @@
   }
 
   @include breakpoint($mobile) {
-    padding: 15px 0;
+    padding: 0;
   }
 }
 
@@ -219,7 +232,7 @@
   content: '';
   position: absolute;
   right: 35px;
-  top: 25px;
+  top: 15px;
   background-image: url("../images/arrow-accordion.svg");
   background-repeat: no-repeat;
   width: 17px;
@@ -238,5 +251,10 @@
     justify-content: center;
     margin-top: -60px;
     margin-bottom: 45px;
+  }
+
+  @include breakpoint($mobile) {
+    margin: 0;
+    justify-content: flex-start;
   }
 }

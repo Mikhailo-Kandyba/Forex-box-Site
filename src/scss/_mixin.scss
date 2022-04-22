@@ -19,3 +19,14 @@ $mobile: 767px;
   -ms-user-select: none;
   border-radius: 5px;
 }
+
+@mixin transparent-text {
+  font-size: $font-size-base + 5;
+  line-height: $line-height-base + 6;
+  font-family: $lato-extra-bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $nobel;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  position: relative;
+}

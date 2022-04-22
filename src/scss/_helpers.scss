@@ -37,6 +37,18 @@
   }
 }
 
+.d-none {
+  display: none;
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+}
+
+.border-sm-none {
+  border: none;
+}
+
 .position-relative {
   position: relative;
 }
@@ -55,6 +67,10 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.font-weight-400 {
+  font-family: $lato-regular;
 }
 
 

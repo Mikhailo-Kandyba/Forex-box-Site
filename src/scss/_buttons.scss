@@ -31,6 +31,10 @@
   @include breakpoint($tablet) {
     max-width: 265px;
   }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
 }
 
 .width-100 {
@@ -72,6 +76,11 @@
 
   @include breakpoint($tablet) {
     max-width: 186px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    padding: 13px;
   }
 }
 
