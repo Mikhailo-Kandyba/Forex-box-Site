@@ -3810,18 +3810,43 @@ form {
     font-size: 35px;
     line-height: 45px;
     margin-bottom: 24px; }
+    @media only screen and (max-width: 1334px) {
+      .contacts-wrap h4 {
+        font-family: Lato-Regular;
+        font-size: 25px;
+        line-height: 30px;
+        color: #373737; } }
 
 .contact-row {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 1334px) {
+    .contact-row {
+      align-items: center; } }
 
 .col-info {
   width: 40%; }
+  @media only screen and (max-width: 1334px) {
+    .col-info {
+      width: 55%; } }
+  .col-info > .info {
+    display: block; }
+    @media only screen and (max-width: 1334px) {
+      .col-info > .info {
+        display: none; } }
+  .col-info .info:last-child {
+    display: none; }
+    @media only screen and (max-width: 1334px) {
+      .col-info .info:last-child {
+        display: block; } }
 
 .col-map {
   width: 60%;
   display: flex;
   justify-content: flex-end; }
+  @media only screen and (max-width: 1334px) {
+    .col-map {
+      width: 45%; } }
   .col-map .img-area {
     max-width: 739px;
     width: 100%;
@@ -3833,24 +3858,42 @@ form {
   line-height: 27px;
   color: #373737;
   margin-bottom: 5px; }
+  @media only screen and (max-width: 1334px) {
+    .col-body h3 {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .col-body a {
   display: inline-block;
   color: #373737;
   margin-bottom: 19px; }
+  @media only screen and (max-width: 1334px) {
+    .col-body a {
+      margin-bottom: 24px; } }
 
 .col-body p {
   font-family: Lato-Light;
   font-size: 18px;
   margin-bottom: 6px; }
+  @media only screen and (max-width: 1334px) {
+    .col-body p {
+      line-height: 22px;
+      margin-bottom: 9px; } }
 
 .col-body .holder-text {
   padding-right: 67px;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 1334px) {
+    .col-body .holder-text {
+      padding: 16px 30px 0 0; } }
 
 .col-body .holder-btn {
   max-width: 267px;
   width: 100%; }
+  @media only screen and (max-width: 1334px) {
+    .col-body .holder-btn {
+      margin-bottom: 10px;
+      max-width: 300px; } }
 
 .col-body .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
