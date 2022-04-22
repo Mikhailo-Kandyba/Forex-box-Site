@@ -13,12 +13,22 @@
     justify-content: space-between;
   }
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   li {
     width: 33.3%;
     padding: 0 20px;
 
     @include breakpoint($desktop) {
       padding: 0 9px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 9px;
     }
   }
 }
@@ -44,6 +54,11 @@
     padding: 16px 0 10px;
   }
 
+  @include breakpoint($mobile) {
+    padding: 13px 0;
+    min-height: 90px;
+  }
+
   span {
     display: block;
   }
@@ -65,6 +80,10 @@
     font-size: $font-size-base + 5;
     line-height: $line-height-base + 6;
   }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .payment_text {
@@ -75,6 +94,11 @@
     font-size: $font-size-base - 4;
     line-height: $line-height-base - 4;
     max-width: 187px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
   }
 }
 
@@ -106,6 +130,12 @@
     @include breakpoint($tablet) {
       margin-bottom: 20px;
     }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -122,6 +152,10 @@
   @include breakpoint($tablet) {
     padding: 0 56px;
     margin-bottom: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0;
   }
 }
 
@@ -163,6 +197,10 @@
   @include breakpoint($tablet) {
     width: 50%;
   }
+
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
 }
 
 .cards_title {
@@ -179,6 +217,10 @@
   display: flex;
   justify-content: center;
 
+  @include breakpoint($mobile) {
+    padding: 0 15px;
+  }
+
   .btn {
     @include border-gradient;
     text-align: center;
@@ -188,6 +230,10 @@
 
     @include breakpoint($desktop) {
       max-width: 300px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
     }
 
     &:hover {
@@ -210,6 +256,10 @@
 
   @include breakpoint($tablet) {
     margin-bottom: 58px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 50px;
   }
 }
 

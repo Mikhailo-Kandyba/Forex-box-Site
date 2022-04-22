@@ -3450,12 +3450,20 @@ form {
     .payment-list {
       max-width: 100%;
       justify-content: space-between; } }
+  @media only screen and (max-width: 767px) {
+    .payment-list {
+      flex-direction: column; } }
   .payment-list li {
     width: 33.3%;
     padding: 0 20px; }
     @media only screen and (max-width: 1334px) {
       .payment-list li {
         padding: 0 9px; } }
+    @media only screen and (max-width: 767px) {
+      .payment-list li {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 9px; } }
 
 .payment_area {
   display: flex;
@@ -3483,6 +3491,10 @@ form {
     .payment_area {
       min-height: 111px;
       padding: 16px 0 10px; } }
+  @media only screen and (max-width: 767px) {
+    .payment_area {
+      padding: 13px 0;
+      min-height: 90px; } }
   .payment_area span {
     display: block; }
 
@@ -3500,6 +3512,9 @@ form {
     .payment_number {
       font-size: 25px;
       line-height: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .payment_number {
+      margin-bottom: 0; } }
 
 .payment_text {
   max-width: 227px;
@@ -3509,6 +3524,10 @@ form {
       font-size: 16px;
       line-height: 20px;
       max-width: 187px; } }
+  @media only screen and (max-width: 767px) {
+    .payment_text {
+      font-size: 18px;
+      line-height: 22px; } }
 
 .payment-methods-wrap {
   margin-bottom: 100px; }
@@ -3533,6 +3552,11 @@ form {
     @media only screen and (max-width: 1023px) {
       .payment-methods-wrap h4 {
         margin-bottom: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .payment-methods-wrap h4 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px; } }
 
 .cards-list {
   display: flex;
@@ -3546,6 +3570,9 @@ form {
     .cards-list {
       padding: 0 56px;
       margin-bottom: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .cards-list {
+      padding: 0; } }
 
 .cards_number {
   font-size: 25px;
@@ -3585,6 +3612,9 @@ form {
   @media only screen and (max-width: 1023px) {
     .cards_item {
       width: 50%; } }
+  @media only screen and (max-width: 767px) {
+    .cards_item {
+      width: 100%; } }
 
 @media only screen and (max-width: 1334px) {
   .cards_title {
@@ -3597,6 +3627,9 @@ form {
 .holder-btn {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 767px) {
+    .holder-btn {
+      padding: 0 15px; } }
   .holder-btn .btn {
     background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
     background: -o-linear-gradient(#FBF9F8, #FBF9F8) padding-box, -o-linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
@@ -3614,6 +3647,9 @@ form {
     @media only screen and (max-width: 1334px) {
       .holder-btn .btn {
         max-width: 300px; } }
+    @media only screen and (max-width: 767px) {
+      .holder-btn .btn {
+        max-width: 100%; } }
     .holder-btn .btn:hover:hover {
       background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
 
@@ -3628,6 +3664,9 @@ form {
   @media only screen and (max-width: 1023px) {
     .payment-wrap {
       margin-bottom: 58px; } }
+  @media only screen and (max-width: 767px) {
+    .payment-wrap {
+      margin-bottom: 50px; } }
 
 .ellipse-pyment-position .ellipse-3 {
   bottom: 72%;
