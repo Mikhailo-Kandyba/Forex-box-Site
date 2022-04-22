@@ -3479,6 +3479,10 @@ form {
     .payment_area {
       min-height: 130px;
       padding: 17px 0; } }
+  @media only screen and (max-width: 1023px) {
+    .payment_area {
+      min-height: 111px;
+      padding: 16px 0 10px; } }
   .payment_area span {
     display: block; }
 
@@ -3492,16 +3496,28 @@ form {
       font-size: 30px;
       line-height: 36px;
       margin-bottom: 10px; } }
+  @media only screen and (max-width: 1023px) {
+    .payment_number {
+      font-size: 25px;
+      line-height: 30px; } }
 
 .payment_text {
   max-width: 227px;
   width: 100%; }
+  @media only screen and (max-width: 1023px) {
+    .payment_text {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 187px; } }
 
 .payment-methods-wrap {
   margin-bottom: 100px; }
   @media only screen and (max-width: 1334px) {
     .payment-methods-wrap {
       margin-bottom: 70px; } }
+  @media only screen and (max-width: 1023px) {
+    .payment-methods-wrap {
+      margin-bottom: 60px; } }
   .payment-methods-wrap h4 {
     font-family: Lato-Bold;
     font-size: 35px;
@@ -3514,6 +3530,9 @@ form {
         font-size: 22px;
         line-height: 27px;
         margin-bottom: 26px; } }
+    @media only screen and (max-width: 1023px) {
+      .payment-methods-wrap h4 {
+        margin-bottom: 20px; } }
 
 .cards-list {
   display: flex;
@@ -3523,6 +3542,10 @@ form {
   @media only screen and (max-width: 1334px) {
     .cards-list {
       margin-bottom: 16px; } }
+  @media only screen and (max-width: 1023px) {
+    .cards-list {
+      padding: 0 56px;
+      margin-bottom: 20px; } }
 
 .cards_number {
   font-size: 25px;
@@ -3539,6 +3562,9 @@ form {
     .cards_number {
       font-size: 20px;
       line-height: 24px; } }
+  @media only screen and (max-width: 1023px) {
+    .cards_number {
+      padding-right: 2px; } }
 
 .cards_text {
   font-family: Lato-Regular;
@@ -3548,14 +3574,25 @@ form {
     .cards_text {
       font-size: 20px;
       line-height: 24px; } }
+  @media only screen and (max-width: 1023px) {
+    .cards_text {
+      font-size: 18px;
+      line-height: 22px; } }
 
 .cards_item {
   text-align: center;
   width: 25%; }
+  @media only screen and (max-width: 1023px) {
+    .cards_item {
+      width: 50%; } }
 
 @media only screen and (max-width: 1334px) {
   .cards_title {
     margin-bottom: 5px; } }
+
+@media only screen and (max-width: 1023px) {
+  .cards_title {
+    margin-bottom: 0; } }
 
 .holder-btn {
   display: flex;
@@ -3588,14 +3625,25 @@ form {
     .payment-wrap {
       justify-content: space-between;
       margin-bottom: 65px; } }
+  @media only screen and (max-width: 1023px) {
+    .payment-wrap {
+      margin-bottom: 58px; } }
 
 .ellipse-pyment-position .ellipse-3 {
   bottom: 72%;
   right: -9%; }
+  @media only screen and (max-width: 1334px) {
+    .ellipse-pyment-position .ellipse-3 {
+      bottom: 32%;
+      right: -29%; } }
 
 .ellipse-pyment-position .ellipse-8 {
   top: 34%;
   right: 19%; }
+
+.ellipse-pyment-position .ellipse-9 {
+  bottom: -12%;
+  left: -10%; }
 
 .width-24 {
   width: 24px; }
