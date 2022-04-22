@@ -1,0 +1,83 @@
+@import "mixin";
+@import "variables";
+
+.accordion-data-processing {
+  label {
+    font-family: $base-font-default;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin-bottom: 14px;
+    padding: 24px 60px;
+
+    > span {
+      display: flex;
+      @include breakpoint($desktop) {
+        font-family: $lato-bold;
+        @include gradient_text;
+      }
+
+      .number {
+        @include breakpoint($desktop) {
+          display: none;
+        }
+      }
+    }
+
+    @include breakpoint($desktop) {
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      background: $white;
+    }
+  }
+
+  .accordion-content {
+    @include breakpoint($desktop) {
+      max-height: 0;
+    }
+
+    p {
+      margin-bottom: 24px;
+
+      @include breakpoint($desktop) {
+        font-size: $font-size-base - 2;
+        line-height: $line-height-base - 2;
+      }
+    }
+  }
+}
+
+.accordion-data-wrap {
+  margin-bottom: 70px;
+}
+
+/* :checked */
+.accordion-data-processing input:checked ~ .accordion-content {
+  //max-height: 100vh;
+  max-height: 100%;
+
+  @include breakpoint($desktop) {
+    padding: 9px 60px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+}
+
+.accordion-data-processing input[type=checkbox] + label::after {
+  @include breakpoint($desktop) {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 31px;
+    background-image: url("../images/arrow-accordion.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 12px;
+    filter: contrast(20%);
+  }
+}
+
+.accordion-data-processing input[type=checkbox]:checked + label::after {
+  transform: rotate(-180deg);
+  filter: none;
+}

@@ -30,3 +30,11 @@ $mobile: 767px;
   opacity: 1;
   position: relative;
 }
+
+@mixin gradient_text {
+  background: linear-gradient(180deg, #DF6418 0%, #FABB35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

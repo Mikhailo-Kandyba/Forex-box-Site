@@ -3440,29 +3440,29 @@ form {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0; }
 
-.payment-list {
+.payment-steps {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 985px;
   width: 100%; }
   @media only screen and (max-width: 1334px) {
-    .payment-list {
+    .payment-steps {
       max-width: 100%;
       justify-content: space-between; } }
   @media only screen and (max-width: 767px) {
-    .payment-list {
+    .payment-steps {
       flex-direction: column; } }
-  .payment-list .active {
+  .payment-steps .active {
     background: #fff; }
-  .payment-list li {
+  .payment-steps li {
     width: 33.3%;
     padding: 0 20px; }
     @media only screen and (max-width: 1334px) {
-      .payment-list li {
+      .payment-steps li {
         padding: 0 9px; } }
     @media only screen and (max-width: 767px) {
-      .payment-list li {
+      .payment-steps li {
         width: 100%;
         padding: 0;
         margin-bottom: 9px; } }
@@ -3687,6 +3687,70 @@ form {
 .ellipse-pyment-position .ellipse-9 {
   bottom: -12%;
   left: -10%; }
+
+.accordion-data-processing label {
+  font-family: Lato-Light;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 14px;
+  padding: 24px 60px; }
+  .accordion-data-processing label > span {
+    display: flex; }
+    @media only screen and (max-width: 1334px) {
+      .accordion-data-processing label > span {
+        font-family: Lato-Bold;
+        background: linear-gradient(180deg, #DF6418 0%, #FABB35 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent; } }
+    @media only screen and (max-width: 1334px) {
+      .accordion-data-processing label > span .number {
+        display: none; } }
+  @media only screen and (max-width: 1334px) {
+    .accordion-data-processing label {
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      background: #fff; } }
+
+@media only screen and (max-width: 1334px) {
+  .accordion-data-processing .accordion-content {
+    max-height: 0; } }
+
+.accordion-data-processing .accordion-content p {
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 1334px) {
+    .accordion-data-processing .accordion-content p {
+      font-size: 18px;
+      line-height: 22px; } }
+
+.accordion-data-wrap {
+  margin-bottom: 70px; }
+
+/* :checked */
+.accordion-data-processing input:checked ~ .accordion-content {
+  max-height: 100%; }
+  @media only screen and (max-width: 1334px) {
+    .accordion-data-processing input:checked ~ .accordion-content {
+      padding: 9px 60px; } }
+  @media only screen and (max-width: 767px) {
+    .accordion-data-processing input:checked ~ .accordion-content {
+      padding: 0; } }
+
+@media only screen and (max-width: 1334px) {
+  .accordion-data-processing input[type=checkbox] + label::after {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 31px;
+    background-image: url("../images/arrow-accordion.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 12px;
+    filter: contrast(20%); } }
+
+.accordion-data-processing input[type=checkbox]:checked + label::after {
+  transform: rotate(-180deg);
+  filter: none; }
 
 .width-24 {
   width: 24px; }
