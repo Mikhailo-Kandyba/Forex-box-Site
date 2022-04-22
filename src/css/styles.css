@@ -3790,17 +3790,85 @@ form {
     height: 12px;
     filter: contrast(20%); } }
 
-.accordion-data-processing input[type=checkbox]:checked + label > span {
-  font-family: Lato-Bold;
-  background: linear-gradient(180deg, #DF6418 0%, #FABB35 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent; }
+@media only screen and (max-width: 1023px) {
+  .accordion-data-processing input[type=checkbox]:checked + label > span {
+    font-family: Lato-Bold;
+    background: linear-gradient(180deg, #DF6418 0%, #FABB35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; } }
 
 .accordion-data-processing input[type=checkbox]:checked + label::after {
   transform: rotate(-180deg);
   filter: none; }
+
+.contacts-wrap {
+  margin-bottom: 73px; }
+  .contacts-wrap h4 {
+    font-family: Lato-Bold;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 24px; }
+
+.contact-row {
+  display: flex;
+  justify-content: space-between; }
+
+.col-info {
+  width: 40%; }
+
+.col-map {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end; }
+  .col-map .img-area {
+    max-width: 739px;
+    width: 100%;
+    margin-top: -26px; }
+
+.col-body h3 {
+  font-family: Lato-Regular;
+  font-size: 22px;
+  line-height: 27px;
+  color: #373737;
+  margin-bottom: 5px; }
+
+.col-body a {
+  display: inline-block;
+  color: #373737;
+  margin-bottom: 19px; }
+
+.col-body p {
+  font-family: Lato-Light;
+  font-size: 18px;
+  margin-bottom: 6px; }
+
+.col-body .holder-text {
+  padding-right: 67px;
+  margin-bottom: 30px; }
+
+.col-body .holder-btn {
+  max-width: 267px;
+  width: 100%; }
+
+.col-body .btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
+  background: -o-linear-gradient(#FBF9F8, #FBF9F8) padding-box, -o-linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  background: linear-gradient(#FBF9F8, #FBF9F8) padding-box, linear-gradient(#EB800C 0%, #FABB35 100%) border-box;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-radius: 5px; }
+  .col-body .btn:hover {
+    background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
+
+.ellipse-contacts-position .ellipse-8 {
+  top: 4%;
+  right: 21%;
+  width: 548px; }
 
 .width-24 {
   width: 24px; }

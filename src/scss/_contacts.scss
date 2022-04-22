@@ -1,0 +1,82 @@
+@import "mixin";
+@import "variables";
+
+.contacts-wrap {
+  margin-bottom: 73px;
+
+  h4 {
+    font-family: $lato-bold;
+    font-size: $font-size-base + 15;
+    line-height: $line-height-base + 21;
+    margin-bottom: 24px;
+  }
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-info {
+  width: 40%;
+}
+
+.col-map {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+
+  .img-area {
+    max-width: 739px;
+    width: 100%;
+    margin-top: -26px;
+  }
+}
+
+.col-body {
+  h3 {
+    font-family: $lato-regular;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 3;
+    color: $mine-shaft;
+    margin-bottom: 5px;
+  }
+
+  a {
+    display: inline-block;
+    color: $mine-shaft;
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-family: $base-font-default;
+    font-size: $font-size-base - 2;
+    margin-bottom: 6px;
+  }
+
+  .holder-text {
+    padding-right: 67px;
+    margin-bottom: 30px;
+  }
+
+  .holder-btn {
+    max-width: 267px;
+    width: 100%;
+  }
+
+  .btn {
+    @include border-gradient;
+
+    &:hover {
+      background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+    }
+  }
+}
+
+.ellipse-contacts-position {
+  .ellipse-8 {
+    top: 4%;
+    right: 21%;
+    width: 548px;
+  }
+}
