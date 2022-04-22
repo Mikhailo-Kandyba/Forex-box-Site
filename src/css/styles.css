@@ -115,6 +115,12 @@ h6 {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../font/lato/Lato-Black.woff") format("woff"), url("../font/lato/Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .btn {
   display: block;
   font-family: Lato-Light;
@@ -3976,6 +3982,52 @@ form {
   .ellipse-contacts-position .ellipse-9 {
     bottom: 11%;
     left: -40%; } }
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .error-content h4 {
+    font-family: Lato-Black;
+    font-size: 30px;
+    line-height: 36px;
+    color: #373737;
+    margin-bottom: 18px;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 767px) {
+      .error-content h4 {
+        font-family: Lato-Regular;
+        font-size: 20px;
+        line-height: 24px; } }
+  .error-content .img-area {
+    margin-bottom: 75px; }
+    @media only screen and (max-width: 767px) {
+      .error-content .img-area {
+        margin-bottom: 15px; } }
+  .error-content p {
+    font-family: Lato-Regular;
+    text-align: center;
+    max-width: 1120px;
+    margin-bottom: 60px; }
+    @media only screen and (max-width: 767px) {
+      .error-content p {
+        font-family: Lato-Light;
+        font-size: 18px;
+        line-height: 22px; } }
+  .error-content a {
+    display: inline-block;
+    font-family: Lato-Regular;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #eb800c; }
+    @media only screen and (max-width: 767px) {
+      .error-content a {
+        font-family: Lato-Light;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center; } }
+    .error-content a:hover {
+      text-decoration: none; }
 
 .width-24 {
   width: 24px; }
