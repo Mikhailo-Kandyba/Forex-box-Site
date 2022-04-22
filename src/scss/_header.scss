@@ -171,6 +171,8 @@
   }
 
   li {
+    margin: 0 14px;
+
     @include breakpoint($desktop) {
       margin: 0 8px;
     }
@@ -183,6 +185,22 @@
   }
 
   .active {
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+      transition: width 0.25s linear;
+
+      @include breakpoint($tablet) {
+        display: none;
+      }
+    }
+
     @include breakpoint($tablet) {
       font-family: $lato-regular;
       background: rgba(255, 255, 255, 0.9);
@@ -195,12 +213,13 @@
     display: block;
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 2;
-    padding: 5px 10px;
+    position: relative;
+    padding: 5px 0;
 
     @include breakpoint($desktop) {
       font-size: $font-size-base - 4;
       line-height: $line-height-base - 4;
-      padding: 0 5px;
+      padding: 0;
     }
 
     @include breakpoint($tablet) {
@@ -210,7 +229,27 @@
       border-bottom: 1px solid $ebb;
     }
 
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+      transition: width 0.25s linear;
+
+      @include breakpoint($tablet) {
+        display: none;
+      }
+    }
+
     &:hover {
+      &:after {
+        width: 100%;
+      }
+
       @include breakpoint($tablet) {
         font-family: $lato-regular;
         background: rgba(255, 255, 255, 0.9);

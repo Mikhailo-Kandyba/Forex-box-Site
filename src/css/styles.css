@@ -351,14 +351,29 @@ h6 {
       padding-top: 108px;
       background: #fff;
       z-index: 110; } }
-  @media only screen and (max-width: 1334px) {
-    .menu li {
-      margin: 0 8px; } }
-  @media only screen and (max-width: 1023px) {
-    .menu li {
-      width: 100%;
-      text-align: center;
-      margin: 0; } }
+  .menu li {
+    margin: 0 14px; }
+    @media only screen and (max-width: 1334px) {
+      .menu li {
+        margin: 0 8px; } }
+    @media only screen and (max-width: 1023px) {
+      .menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0; } }
+  .menu .active:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+    transition: width 0.25s linear; }
+    @media only screen and (max-width: 1023px) {
+      .menu .active:after {
+        display: none; } }
   @media only screen and (max-width: 1023px) {
     .menu .active {
       font-family: Lato-Regular;
@@ -369,18 +384,34 @@ h6 {
     display: block;
     font-size: 18px;
     line-height: 22px;
-    padding: 5px 10px; }
+    position: relative;
+    padding: 5px 0; }
     @media only screen and (max-width: 1334px) {
       .menu a {
         font-size: 16px;
         line-height: 20px;
-        padding: 0 5px; } }
+        padding: 0; } }
     @media only screen and (max-width: 1023px) {
       .menu a {
         font-size: 20px;
         line-height: 24px;
         padding: 29px 0;
         border-bottom: 1px solid #e8e4e2; } }
+    .menu a:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+      transition: width 0.25s linear; }
+      @media only screen and (max-width: 1023px) {
+        .menu a:after {
+          display: none; } }
+    .menu a:hover:after {
+      width: 100%; }
     @media only screen and (max-width: 1023px) {
       .menu a:hover {
         font-family: Lato-Regular;
@@ -4028,6 +4059,81 @@ form {
         text-align: center; } }
     .error-content a:hover {
       text-decoration: none; }
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -23px;
+  margin-bottom: 23px; }
+  @media only screen and (max-width: 1023px) {
+    .products-list {
+      margin: 0 -15px; } }
+
+.product_item {
+  width: 25%;
+  padding: 0 23px;
+  margin-bottom: 45px; }
+  @media only screen and (max-width: 1334px) {
+    .product_item {
+      width: 33.3%; } }
+  @media only screen and (max-width: 1023px) {
+    .product_item {
+      width: 50%;
+      padding: 0 15px;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .product_item {
+      width: 100%; } }
+
+.product_area {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 10px rgba(66, 35, 16, 0.15);
+  border-radius: 5px;
+  padding: 28px;
+  text-align: center; }
+  @media only screen and (max-width: 1334px) {
+    .product_area {
+      padding: 13px; } }
+  .product_area:hover {
+    box-shadow: 1px 2px 15px rgba(66, 35, 16, 0.2); }
+  .product_area .btn {
+    background: #fff; }
+    .product_area .btn:hover {
+      background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
+  .product_area .img-area {
+    margin-bottom: 19px; }
+
+.product_name {
+  font-family: Lato-Regular;
+  font-weight: 400;
+  color: #373737;
+  margin-bottom: 10px; }
+
+.product_price {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Lato-Bold; }
+
+.pagination-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 105px; }
+
+/* Pagination links */
+.pagination {
+  display: flex;
+  align-items: center; }
+  .pagination a {
+    font-size: 17px;
+    line-height: 21px;
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    transition: background-color .3s; }
+  .pagination .top {
+    margin-right: 50px; }
+  .pagination .bottom {
+    margin-left: 50px; }
 
 .width-24 {
   width: 24px; }
