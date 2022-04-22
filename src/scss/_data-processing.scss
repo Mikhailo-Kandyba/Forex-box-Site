@@ -2,18 +2,46 @@
 @import "variables";
 
 .accordion-data-processing {
+  padding-right: 0;
+
+  @include breakpoint($tablet) {
+    padding: 0 15px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+
   label {
     font-family: $base-font-default;
     font-size: $font-size-base;
     line-height: $line-height-base;
     margin-bottom: 14px;
-    padding: 24px 60px;
+
+    @include breakpoint($desktop) {
+      padding: 24px 60px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 22px 47px;
+    }
+
+    @include breakpoint($mobile) {
+      min-height: 58px;
+      padding: 17px 70px 20px 33px;
+    }
 
     > span {
       display: flex;
       @include breakpoint($desktop) {
-        font-family: $lato-bold;
-        @include gradient_text;
+        font-family: $base-font-family;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+      }
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 3;
+        line-height: $line-height-base - 3;
       }
 
       .number {
@@ -41,12 +69,25 @@
         font-size: $font-size-base - 2;
         line-height: $line-height-base - 2;
       }
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 4;
+        line-height: $line-height-base - 4;
+      }
     }
   }
 }
 
 .accordion-data-wrap {
   margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint($mobile) {
+    margin: 0 -25px;
+  }
 }
 
 /* :checked */
@@ -58,10 +99,15 @@
     padding: 9px 60px;
   }
 
+  @include breakpoint($tablet) {
+    padding: 9px 50px;
+  }
+
   @include breakpoint($mobile) {
-    padding: 0;
+    padding: 6px 32px;
   }
 }
+
 
 .accordion-data-processing input[type=checkbox] + label::after {
   @include breakpoint($desktop) {
@@ -75,7 +121,26 @@
     height: 12px;
     filter: contrast(20%);
   }
+
+  @include breakpoint($mobile) {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    margin-top: -6px;
+    background-image: url("../images/arrow-accordion.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 12px;
+    filter: contrast(20%);
+  }
 }
+
+.accordion-data-processing input[type=checkbox]:checked + label>span {
+  font-family: $lato-bold;
+  @include gradient_text;
+}
+
 
 .accordion-data-processing input[type=checkbox]:checked + label::after {
   transform: rotate(-180deg);
