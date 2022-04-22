@@ -3819,6 +3819,10 @@ form {
         font-size: 25px;
         line-height: 30px;
         color: #373737; } }
+    @media only screen and (max-width: 767px) {
+      .contacts-wrap h4 {
+        font-size: 20px;
+        line-height: 24px; } }
 
 .contact-row {
   display: flex;
@@ -3840,11 +3844,17 @@ form {
     @media only screen and (max-width: 1334px) {
       .col-info > .info {
         display: none; } }
+    @media only screen and (max-width: 767px) {
+      .col-info > .info {
+        display: block; } }
   .col-info .info:last-child {
     display: none; }
     @media only screen and (max-width: 1334px) {
       .col-info .info:last-child {
         display: block; } }
+    @media only screen and (max-width: 767px) {
+      .col-info .info:last-child {
+        display: none; } }
 
 .col-map {
   width: 60%;
@@ -3871,6 +3881,10 @@ form {
     .col-body h3 {
       font-size: 20px;
       line-height: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .col-body h3 {
+      font-size: 17px;
+      line-height: 21px; } }
 
 .col-body a {
   display: inline-block;
@@ -3879,6 +3893,10 @@ form {
   @media only screen and (max-width: 1334px) {
     .col-body a {
       margin-bottom: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .col-body a {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .col-body p {
   font-family: Lato-Light;
@@ -3888,6 +3906,10 @@ form {
     .col-body p {
       line-height: 22px;
       margin-bottom: 9px; } }
+  @media only screen and (max-width: 767px) {
+    .col-body p {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .col-body .holder-text {
   padding-right: 67px;
@@ -3901,6 +3923,10 @@ form {
       width: 100%;
       padding: 17px 0;
       margin-bottom: 9px; } }
+  @media only screen and (max-width: 767px) {
+    .col-body .holder-text {
+      max-width: 100%;
+      padding: 0; } }
 
 .col-body .holder-btn {
   max-width: 267px;
@@ -3909,6 +3935,10 @@ form {
     .col-body .holder-btn {
       margin-bottom: 10px;
       max-width: 300px; } }
+  @media only screen and (max-width: 767px) {
+    .col-body .holder-btn {
+      max-width: 100%;
+      padding: 0; } }
 
 .col-body .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FBF9F8), to(#FBF9F8)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#EB800C), to(#FABB35)) border-box;
@@ -3920,8 +3950,15 @@ form {
   -moz-user-select: none;
   -ms-user-select: none;
   border-radius: 5px; }
+  @media only screen and (max-width: 767px) {
+    .col-body .btn {
+      background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+      color: #fff; } }
   .col-body .btn:hover {
     background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
+    @media only screen and (max-width: 767px) {
+      .col-body .btn:hover {
+        background: transparent; } }
 
 .ellipse-contacts-position .ellipse-8 {
   top: 4%;
@@ -3930,6 +3967,15 @@ form {
   @media only screen and (max-width: 1023px) {
     .ellipse-contacts-position .ellipse-8 {
       display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .ellipse-contacts-position .ellipse-3 {
+    right: -69%; } }
+
+@media only screen and (max-width: 767px) {
+  .ellipse-contacts-position .ellipse-9 {
+    bottom: 11%;
+    left: -40%; } }
 
 .width-24 {
   width: 24px; }

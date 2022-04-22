@@ -20,6 +20,11 @@
       line-height: $line-height-base + 6;
       color: $mine-shaft;
     }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
   }
 }
 
@@ -49,14 +54,23 @@
     @include breakpoint($desktop) {
       display: none;
     }
+
+    @include breakpoint($mobile) {
+      display: block;
+    }
   }
 
   .info {
     &:last-child {
       display: none;
+
        @include breakpoint($desktop) {
          display: block;
        }
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
     }
   }
 }
@@ -93,6 +107,11 @@
       font-size: $font-size-base;
       line-height: $line-height-base;
     }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 3;
+    }
   }
 
   a {
@@ -102,6 +121,11 @@
 
     @include breakpoint($desktop) {
       margin-bottom: 24px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 4;
     }
   }
 
@@ -113,6 +137,11 @@
     @include breakpoint($desktop) {
       line-height: $line-height-base - 2;
       margin-bottom: 9px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 4;
     }
   }
 
@@ -130,6 +159,11 @@
       padding: 17px 0;
       margin-bottom: 9px;
     }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+      padding: 0;
+    }
   }
 
   .holder-btn {
@@ -140,14 +174,28 @@
       margin-bottom: 10px;
       max-width: 300px;
     }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+      padding: 0;
+    }
   }
 
-  .btn {
-    @include border-gradient;
+    .btn {
+      @include border-gradient;
 
-    &:hover {
-      background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
-    }
+      @include breakpoint($mobile) {
+        background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+        color: $white;
+      }
+
+      &:hover {
+        background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+
+        @include breakpoint($mobile) {
+          background: $transparent;
+        }
+      }
   }
 }
 
@@ -159,6 +207,19 @@
 
     @include breakpoint($tablet) {
       display: none;
+    }
+  }
+
+  .ellipse-3 {
+    @include breakpoint($mobile) {
+      right: -69%;
+    }
+  }
+
+  .ellipse-9 {
+    @include breakpoint($mobile) {
+      bottom: 11%;
+      left: -40%;
     }
   }
 }
