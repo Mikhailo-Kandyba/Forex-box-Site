@@ -4,6 +4,10 @@
 .contacts-wrap {
   margin-bottom: 73px;
 
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
+
   h4 {
     font-family: $lato-bold;
     font-size: $font-size-base + 15;
@@ -35,6 +39,10 @@
     width: 55%;
   }
 
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+
   > .info {
     display: block;
 
@@ -60,6 +68,10 @@
 
   @include breakpoint($desktop) {
     width: 45%;
+  }
+
+  @include breakpoint($tablet) {
+    display: none;
   }
 
   .img-area {
@@ -111,6 +123,13 @@
     @include breakpoint($desktop) {
       padding: 16px 30px 0 0;
     }
+
+    @include breakpoint($tablet) {
+      max-width: 462px;
+      width: 100%;
+      padding: 17px 0;
+      margin-bottom: 9px;
+    }
   }
 
   .holder-btn {
@@ -137,5 +156,9 @@
     top: 4%;
     right: 21%;
     width: 548px;
+
+    @include breakpoint($tablet) {
+      display: none;
+    }
   }
 }

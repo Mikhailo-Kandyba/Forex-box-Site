@@ -3805,6 +3805,9 @@ form {
 
 .contacts-wrap {
   margin-bottom: 73px; }
+  @media only screen and (max-width: 1023px) {
+    .contacts-wrap {
+      margin-bottom: 30px; } }
   .contacts-wrap h4 {
     font-family: Lato-Bold;
     font-size: 35px;
@@ -3829,6 +3832,9 @@ form {
   @media only screen and (max-width: 1334px) {
     .col-info {
       width: 55%; } }
+  @media only screen and (max-width: 1023px) {
+    .col-info {
+      width: 100%; } }
   .col-info > .info {
     display: block; }
     @media only screen and (max-width: 1334px) {
@@ -3847,6 +3853,9 @@ form {
   @media only screen and (max-width: 1334px) {
     .col-map {
       width: 45%; } }
+  @media only screen and (max-width: 1023px) {
+    .col-map {
+      display: none; } }
   .col-map .img-area {
     max-width: 739px;
     width: 100%;
@@ -3886,6 +3895,12 @@ form {
   @media only screen and (max-width: 1334px) {
     .col-body .holder-text {
       padding: 16px 30px 0 0; } }
+  @media only screen and (max-width: 1023px) {
+    .col-body .holder-text {
+      max-width: 462px;
+      width: 100%;
+      padding: 17px 0;
+      margin-bottom: 9px; } }
 
 .col-body .holder-btn {
   max-width: 267px;
@@ -3912,6 +3927,9 @@ form {
   top: 4%;
   right: 21%;
   width: 548px; }
+  @media only screen and (max-width: 1023px) {
+    .ellipse-contacts-position .ellipse-8 {
+      display: none; } }
 
 .width-24 {
   width: 24px; }
