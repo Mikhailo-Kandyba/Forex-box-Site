@@ -1056,6 +1056,10 @@ h6 {
     line-height: 48px;
     margin-bottom: 53px;
     text-align: center; }
+  .blog-wrap .slick-slide {
+    padding: 0 !important; }
+  .blog-wrap .slick-list {
+    padding: 2px 20px; }
 
 .blog_container {
   display: flex;
@@ -1063,10 +1067,13 @@ h6 {
 
 .blog_item {
   width: 33.3%;
-  padding: 10px 30px; }
+  padding: 10px 10px !important; }
   @media only screen and (max-width: 1334px) {
     .blog_item {
       width: 50%; } }
+  @media only screen and (max-width: 1334px) {
+    .blog_item {
+      padding: 20px 10px; } }
 
 .blog_section {
   background: #fefefd;
@@ -1207,6 +1214,9 @@ h6 {
 
 .slick-next {
   left: 12% !important; }
+  @media only screen and (max-width: 1023px) {
+    .slick-next {
+      left: 22% !important; } }
   .slick-next:after {
     content: '';
     position: absolute;
@@ -1475,7 +1485,9 @@ h6 {
 
 /*select*/
 form {
-  margin-right: 30px; }
+  margin-right: 30px;
+  max-width: 590px;
+  width: 100%; }
   @media only screen and (max-width: 767px) {
     form {
       margin-right: 0;
@@ -3333,8 +3345,12 @@ form {
 /* --------------------------------------------------end SCROLL -------------------------------------------------------- */
 .benefits-wrap {
   margin-bottom: 105px; }
+  @media only screen and (max-width: 1334px) {
+    .benefits-wrap {
+      display: none; } }
   @media only screen and (max-width: 1023px) {
     .benefits-wrap {
+      display: block;
       margin-bottom: 5px; } }
   @media only screen and (max-width: 767px) {
     .benefits-wrap {
@@ -3435,6 +3451,9 @@ form {
       float: left;
       display: block;
       margin-bottom: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .benefits_mobile .tabs-content {
+      margin: 0 auto; } }
 
 @media only screen and (max-width: 1023px) {
   .benefits {

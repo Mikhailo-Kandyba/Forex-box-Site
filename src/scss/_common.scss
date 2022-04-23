@@ -625,6 +625,14 @@
     margin-bottom: 53px;
     text-align: center;
   }
+
+  .slick-slide {
+    padding: 0 !important;
+  }
+
+  .slick-list {
+    padding: 2px 20px;
+  }
 }
 
 .blog_container {
@@ -636,10 +644,15 @@
 
 .blog_item {
   width: 33.3%;
-  padding: 10px 30px;
+  //padding: 10px 30px;
+  padding: 10px 10px !important;
 
   @include breakpoint($desktop) {
     width: 50%;
+  }
+
+  @include breakpoint($desktop) {
+    padding: 20px 10px;
   }
 }
 
@@ -818,6 +831,11 @@
 
 .slick-next {
   left: 12% !important;
+
+  @include breakpoint($tablet) {
+    left: 22% !important;
+  }
+
   &:after {
     content: '';
     position: absolute;

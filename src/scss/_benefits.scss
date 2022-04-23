@@ -4,7 +4,12 @@
 .benefits-wrap {
   margin-bottom: 105px;
 
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
   @include breakpoint($tablet) {
+    display: block;
     margin-bottom: 5px;
   }
 
@@ -129,6 +134,12 @@
     float: left;
     display: block;
     margin-bottom: 25px;
+  }
+
+  .tabs-content {
+    @include breakpoint($mobile) {
+      margin: 0 auto;
+    }
   }
 }
 

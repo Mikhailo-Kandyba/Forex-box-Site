@@ -4,6 +4,8 @@
 /*select*/
 form {
   margin-right: 30px;
+  max-width: 590px;
+  width: 100%;
 
   @include breakpoint($mobile) {
     margin-right: 0;
