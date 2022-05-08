@@ -151,9 +151,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -15px;
   margin-bottom: 35px;
 
   @include breakpoint($desktop) {
+    margin: 0 -10px;
     margin-bottom: 16px;
   }
 
@@ -166,6 +168,26 @@
     padding: 0;
   }
 }
+
+.cards_item {
+  text-align: center;
+  width: 25%;
+  padding: 0 15px;
+
+  @include breakpoint($desktop) {
+    padding: 0 10px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 50%;
+    margin-bottom: 26px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+}
+
 
 .cards_number {
   @include transparent-text;
@@ -198,26 +220,13 @@
   }
 }
 
-.cards_item {
-  text-align: center;
-  width: 25%;
-
-  @include breakpoint($tablet) {
-    width: 50%;
-  }
-
-  @include breakpoint($mobile) {
-    width: 100%;
-  }
-}
-
 .cards_title {
   @include breakpoint($desktop) {
     margin-bottom: 5px;
   }
 
   @include breakpoint($tablet) {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -290,5 +299,77 @@
   .ellipse-9 {
     bottom: -12%;
     left: -10%;
+  }
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 22px;
+  background: $spring-wood;
+  box-shadow: 2px 3px 15px 2px rgba(105, 49, 14, 0.15);
+  border-radius: 5px;
+  min-height: 200px;
+
+  @include breakpoint($desktop) {
+    padding: 13px 10px;
+    min-height: 175px;
+  }
+
+  img {
+    display: flex;
+  }
+
+  .card-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-area {
+      max-width: 35px;
+
+      &:last-child {
+        max-width: 25px;
+      }
+    }
+  }
+
+  .img-area-card {
+    max-width: 80px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -7px;
+  }
+
+  .card-number {
+    margin-bottom: 6px;
+
+    span {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 5;
+      color: $mine-shaft;
+      padding: 0 10px;
+
+      @include breakpoint($desktop) {
+        padding: 0 3px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .card-dada {
+    display: block;
+    text-align: right;
+    font-size: $font-size-base - 7;
+    line-height: $line-height-base - 8;
   }
 }
