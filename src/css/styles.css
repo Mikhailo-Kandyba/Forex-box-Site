@@ -351,7 +351,7 @@ h6 {
       background: #fff;
       z-index: 110; } }
   .menu li {
-    margin: 0 14px; }
+    margin: 0 12px; }
     @media only screen and (max-width: 1334px) {
       .menu li {
         margin: 0 8px; } }
@@ -877,9 +877,10 @@ h6 {
     padding: 5px;
     position: absolute;
     bottom: 125%;
-    left: 50%;
+    left: auto;
+    right: 0;
     margin-left: -80px;
-    z-index: 100;
+    z-index: 120;
     font-size: 18px;
     line-height: 21px;
     /* Popup arrow */ }
@@ -887,7 +888,8 @@ h6 {
       content: "";
       position: absolute;
       top: 100%;
-      left: 30%;
+      left: auto;
+      right: 10%;
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
@@ -2097,7 +2099,7 @@ form {
   display: none; }
 
 .tab {
-  width: 55%;
+  width: 50%;
   margin: 0 30px 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2114,7 +2116,7 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: flex-start;
-  padding: 25px 43px 20px 37px;
+  padding: 25px 23px 20px 37px;
   text-align: start;
   box-sizing: border-box;
   position: relative;
@@ -2157,8 +2159,8 @@ form {
     display: none; }
     #partners_list input:checked + label,
     #faq_tabs_list input:checked + label {
-      width: 57%; }
-      @media only screen and (max-width: 1334px) {
+      width: 53%; }
+      @media only screen and (max-width: 1023px) {
         #partners_list input:checked + label,
         #faq_tabs_list input:checked + label {
           width: 100%; } }
@@ -2957,6 +2959,9 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media only screen and (max-width: 767px) {
+    .tab-item_2 {
+      height: 320px !important; } }
 
 .text_body {
   width: 70%;
@@ -3036,7 +3041,6 @@ form {
     background: linear-gradient(180deg, #EB800C 0%, #FABB35 100%); }
   .tab-item_2 {
     height: 420px;
-    overflow-x: auto;
     position: unset;
     right: 0;
     top: 0;
@@ -3172,7 +3176,6 @@ form {
     background: linear-gradient(180deg, #EB800C 0%, #FABB35 100%); }
   .tab-item_2 {
     height: 420px;
-    overflow-x: auto;
     position: unset;
     right: 0;
     top: 0;
@@ -3230,8 +3233,6 @@ form {
 .partners_tab_pages {
   margin: 0; }
 
-.tab-item_2 {
-  overflow-x: hidden; }
 
 /* -------------------------------------------------- SCROLL -------------------------------------------------------- */
 .scroll::-webkit-scrollbar {
@@ -3294,6 +3295,18 @@ form {
   outline: none;
   border-radius: 3px; }
 
+@media only screen and (max-width: 1334px) {
+  .partners .scroll {
+    height: 335px; } }
+
+@media only screen and (max-width: 1023px) {
+  .partners .scroll {
+    height: 230px; } }
+
+@media only screen and (max-width: 767px) {
+  .partners .scroll {
+    height: 110px; } }
+
 @media (max-width: 550px) {
   .social_links_box {
     width: 100%; } }
@@ -3301,18 +3314,16 @@ form {
 @media (max-width: 1024px) {
   .tab-item_2 {
     height: 420px;
-    overflow-x: auto;
     position: unset;
     right: 0;
     top: 0;
     width: 90%;
-    margin: 25px auto 10px; } }
+    margin: 15px auto 10px; } }
 
 @media (max-width: 1024px) {
   .partners_box {
     margin-top: 10px; }
-  .tab-item_2 {
-    overflow-x: hidden; } }
+ }
 
 @media (max-width: 1270px) {
   .text_body {

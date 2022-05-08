@@ -396,9 +396,10 @@
     padding: 5px;
     position: absolute;
     bottom: 125%;
-    left: 50%;
+    left: auto;
+    right: 0;
     margin-left: -80px;
-    z-index: 100;
+    z-index: 120;
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 3;
 
@@ -407,7 +408,8 @@
       content: "";
       position: absolute;
       top: 100%;
-      left: 30%;
+      left: auto;
+      right: 10%;
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
@@ -958,107 +960,3 @@
 }
 
 
-//@media print {
-//  .menu {
-//    display: none;
-//  }
-//
-//  .header {
-//    margin-bottom: 0;
-//
-//    .btn-group {
-//      display: none;
-//    }
-//  }
-//
-//  .ellipse-position {
-//    img {
-//      display: none;
-//    }
-//  }
-//
-//  .description-service {
-//    padding: 29px 38px 32px;
-//
-//    h4 {
-//      margin-left: 0;
-//    }
-//  }
-//
-//  h4 {
-//    font-size: 25px !important;
-//    margin-bottom: 20px !important;
-//  }
-//
-//  .btn {
-//    display: none;
-//  }
-//
-//  .service-area {
-//    flex-direction: column-reverse;
-//  }
-//
-//  .service-item {
-//    width: 100%;
-//
-//    > span {
-//      display: none;
-//    }
-//
-//    > ul {
-//      display: flex;
-//      justify-content: space-between;
-//    }
-//  }
-//
-//  .benefits-wrap {
-//    display: none;
-//  }
-//
-//  .ping-test-wrap {
-//    display: none;
-//  }
-//
-//  #partners_list input:checked + label, #faq_tabs_list input:checked + label {
-//    width: 100% !important;
-//  }
-//
-//  .tab-item {
-//    width: 100% !important;
-//    margin: 0 !important;
-//  }
-//
-//  .description-service-wrap {
-//    display: none;
-//  }
-//
-//  .slick-arrow {
-//    display: none;
-//  }
-//
-//  .faq_arrows_block {
-//    display: none !important;
-//  }
-//
-//  .tab {
-//    background: #fff !important;
-//    padding: 0 !important;
-//    box-shadow: none !important;
-//  }
-//
-//  .blog-wrap {
-//    display: none;
-//  }
-//
-//  .blog_section {
-//    box-shadow: none !important;
-//  }
-//
-//  .blog_container {
-//    flex-direction: column;
-//  }
-//
-//  footer {
-//    display: none;
-//  }
-//}
